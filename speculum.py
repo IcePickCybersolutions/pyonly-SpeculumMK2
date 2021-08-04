@@ -31,4 +31,6 @@ os.system("deep_animate", image, video, "conf.yaml deep_animator_model.pth.tar")
 print('''Your video is now saved to the folder with the code, process complete
 go to replit with the 'open in replit' button, then download the video file it created
 if you're already on the replit site you can simply right click the new file and select the download option to, well, download it
+
+If it worked, consider telling your friends, if thats something you tell your friends about i guess
 ''')

@@ -27,7 +27,8 @@ image = input("Drop URL to source image: ")
 video = input("Drop YT URL to driving video: ")
 wget.download(image, 'image.jpg')
 pytube.YouTube(video).streams.get_highest_resolution().download()
-os.system("deep_animate", image, video, "conf.yaml deep_animator_model.pth.tar")
+words = "deep_animate " + image + " " + video + " conf.yml deep_animator_model.pth.tar"
+os.system(words)
 print('''Your video is now saved to the folder with the code, process complete
 go to replit with the 'open in replit' button, then download the video file it created
 if you're already on the replit site you can simply right click the new file and select the download option to, well, download it

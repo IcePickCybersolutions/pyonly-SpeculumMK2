@@ -1,4 +1,5 @@
 import wget
+import os
 import pytube
 
 print('''
@@ -26,5 +27,5 @@ image = input("Drop URL to source image: ")
 video = input("Drop YT URL to driving video: ")
 wget.download(image, 'image.jpg')
 pytube.YouTube(video).streams.get_highest_resolution().download()
-
+os.system("deep_animate", impage, video, "conf.yaml deep_animator_model.pth.tar")
 print("Your video is now saved to the folder with the code, process complete")
